@@ -1,0 +1,296 @@
+/*
+title: Web Fundamental final Exam
+file: main style
+type: CSS file
+Developer: Anas Zughayyar
+Date: 17/10/2023
+*/
+
+
+/* CSS Resit */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page-main {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Page header style */
+.main-header {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.main-header-title {
+    display: flex;
+    gap: 5px;
+}
+
+.main-header-title img {
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.main-header-title span {
+    color: #990000;
+}
+
+.main-header-search {
+    width: 280px;
+    height: 25px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-header-search input {
+    height: 90%;
+    width: 230px;
+    border: none;
+    padding: 0px 0px 0px 5px;
+}
+
+.main-header-search img {
+    height: 15px;
+    width: 15px;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+}
+
+.main-header-likes {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-header-likes img {
+    width: 30px;
+}
+
+/* Page Navigation bar style */
+.main-nav {
+    background-color: #990000;
+    border: 2px solid #ab4848;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color:  #ab4848;
+}
+
+.main-nav button {
+    box-shadow: 2px 2px 2px black;
+    width: 60px;
+    height: 22px;
+}
+
+.main-nav button:hover {
+    cursor: pointer;
+}
+
+
+/* Slide Style*/ 
+
+.main-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+}
+
+#top-slide {
+    width: 700px;
+    height: 180px;
+}
+
+.main-slide button{
+    position: absolute;
+    left: 160px;
+    bottom: 50px;
+    background-color: #990000;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px black;
+    border: 2px solid black;
+}
+
+.main-slide button:hover {
+    cursor: pointer;
+    background-color: #ab4848;
+}
+
+.slide-arrow:hover {
+    cursor: pointer;
+}
+
+
+/* main view Style */
+.main-view {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-view-trend {
+    width: 500px;
+    height: 100%;
+}
+
+.main-view-trend h2 {
+    color: #990000;
+}
+
+.main-view-top {
+    width: 200px;
+    height: 100%;
+}
+
+.main-view-top h2 {
+    color: #990000;
+}
+
+.main-view-trend-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-view-trend-entry img {
+    width: 100px;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.main-view-top img {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+}
+
+.main-view-trend-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.main-view-trend-entry button {
+    background-color: #990000;
+    border: 2px solid black;
+    width: 90px;
+    height: 22px;
+}
+
+.main-view-trend-entry button:hover {
+    cursor: pointer;
+}
+
+.main-view-trend-entry button:active {
+    background-color: #ab4848;
+
+}
+
+.trend-entry-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.trend-entry-title img {
+    width: 20px;
+}
+
+.trend-like:hover {
+    cursor: pointer;
+}
+
+/* Footer style */
+.page-footer {
+    width: 800px;
+    margin: auto;
+    height: 250px;
+    background-color: #990000;
+    padding: 20px 10px 0px 10px;
+}
+
+.page-footer-links {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    text-align: center;
+}
+
+.page-footer-links h4 {
+    color: white;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.page-footer-contact {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footer-contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.footer-contact-us input {
+    border: 2px solid black;
+
+}
+
+.footer-contact-us button {
+    width: 60px;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px black;
+}
+.page-footer-contact span {
+    color: white;
+    text-decoration: underline;
+}
+
+.page-footer-contact img {
+    width: 30px;
+}
+
+.page-footer-contact p {
+    max-width: 400px;
+}

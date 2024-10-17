@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Fundamentals Exam</title>
+
+    <!--Link style files-->
+    <link rel="stylesheet" href="./Styles/style-main.css">
+</head>
+<body>
+    <!--This page devided into two main divs. page main & footer-->
+    <div class="page-main">
+        <!--the main is devided as: header, nav , watch and view-->
+        <div class="main-header">
+            <div class="main-header-title">
+                <img src="./Assets/topviews/tv-4.jpg" alt="Otaku title!">
+                <h1>Ota<span>ku</span></h1>
+            </div>
+            <div class="main-header-search">
+                <img id="search-icon" src="./Assets/icons/search-icon.svg" alt="Search!" onclick="return_search()">
+                <input id="search-input" type="text" placeholder="search">
+                <img src="./Assets/icons/microphone-icon.svg" alt="mic!!">
+            </div>
+            <div class="main-header-likes">
+                <img src="./Assets/icons/heart-solid.svg" alt="Heart you!">
+                <h3 id="likes-num">2</h3>
+            </div>
+        </div>
+        <div class="main-nav">
+            <a href="">Home</a>
+            <a href="">Category</a>
+            <a href="">Contact Us</a>
+            <a href="">About</a>
+            <button>sign in</button>
+        </div>
+        <div class="main-slide">
+            <img class="slide-arrow" src="./Assets/icons/arrow-left.svg" alt="go left!" onclick="change_slide_left()">
+            <img id="top-slide" src="./Assets/Slider/tv-5.jpg" alt="top view">
+            <img class="slide-arrow" src="./Assets/icons/arrow-right.svg" alt="go right!" onclick="change_slide_right()">
+            <button onclick="remove_element(this)">Watch Now</button>
+        </div>
+        <div class="main-view">
+            <div class="main-view-trend">
+                <h2>Trending Now</h2>
+                <!-- This grid view-->
+                <div class="main-view-trend-grid">
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow/Attack-on-Titan.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>Attack on Titans</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+                        <button>Show More</button>
+                    </div>
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow/Dragon-Ball.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>Dragon Ball</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+                        <button>Show More</button>
+                    </div>
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow/Hunter-x-Hunter.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>Hunter x Hunter</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+                        <button>Show More</button>
+                    </div>
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow/Naruto.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>Naruto</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+                        <button>Show More</button>
+                    </div>
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow/One-Piece.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>One Piece</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+
+                        <button>Show More</button>
+                    </div>
+                    <div class="main-view-trend-entry">
+                        <img src="./Assets/trendingnow//Steinsgate.jpg" alt="trend entry">
+                        <div class="trend-entry-title">
+                            <h4>Steinsgate</h4>
+                            <img onclick="add_like()" class="trend-like" src="./Assets/icons/heart-solid.svg" alt="love">
+                        </div>
+                        <button>Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-view-top">
+                <h2>Top Views</h2>
+                <img src="./Assets/topviews/tv-1.jpg" alt="top view">
+                <img src="./Assets/topviews/tv-3.jpg" alt="top view">
+                <img src="./Assets/topviews/tv-4.jpg" alt="top view">
+            </div>    
+        </div>
+    </div>
+    <div class="page-footer">
+        <!--page footer divided into links and contact-->
+        <div class="page-footer-links">
+            <div>
+                <h3>Website Info</h3>
+                <h4>Otaku</h4>
+                <h4>About Us</h4>
+            </div>
+            <div>
+                <h3>Important Links</h3>
+                <h4>Anime List</h4>
+                <h4>Anime News</h4>
+            </div>
+            <div >
+                <h3>Legal Info&Policies</h3>
+                <h4>Privacy Policy</h4>
+                <h4>Terms of Use</h4>
+            </div>
+            <div>
+                <h3>Help and Support</h3>
+                <h4>Technical Support</h4>
+                <h4>FAQ</h4>
+            </div>
+        </div>
+
+        <div class="page-footer-contact">
+            <div>
+                <h3>Social Media Links</h3>
+                <img src="./Assets/icons/facebook-icon.svg" alt="facebook">
+                <img src="./Assets/icons/instagram-icon.svg" alt="instagram">
+                <img src="./Assets/icons/twitter-icon.svg" alt="twitter">
+            </div>
+            <div>
+                <h3>Copyrights Info</h3>
+                <p>
+                    Copyright @2024 All rights reserved | This template is made with by <span>Axsos Academy</span>
+                </p>
+            </div>
+            <div class="footer-contact-us">
+                <h3>Contact Us</h3>
+                <input type="text" placeholder="email@axsos.academy">
+                <input type="text" placeholder="yourname">
+                <button>send</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Link script files-->
+    <script src="./Scripts/script-main.js"></script>
+</body>
+</html>
